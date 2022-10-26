@@ -1,10 +1,13 @@
-import logo from './logo.svg';
+import React from 'react'
 import './App.css';
 
-function App() {
+import Home from './Home';
+
+function App() 
+{
   return (
     <div className="App">
-        <h2>  Ddlgiboj </h2>
+            <Home />
     </div>
   );
 }
