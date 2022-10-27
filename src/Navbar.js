@@ -3,11 +3,13 @@ import './Navbar.css';
 import {FcSearch} from 'react-icons/fc';
 import Exploreoptions from './Exploreoptions';
 
+import Footer from './Footer';
+
  function Navbar() {
   return (
             <div className ='container'>
                 <div className = 'navbar-bg'>
-                        <div className="navbar-content">
+                        <div className = "navbar-content">
                             <div className = "navbar-first">
                                     <span> Get the App  </span>
                             </div>
@@ -41,6 +43,7 @@ import Exploreoptions from './Exploreoptions';
                  </div>
 
                  <Exploreoptions />
+                 {/* <Footer /> */}
 
             </div>
   )

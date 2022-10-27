@@ -32,12 +32,12 @@ import { MdKeyboardArrowUp} from 'react-icons/md';
               
          </div>
     
-         <div className = "first-accordian">
+         <div className = "second-accordian">
                 <span onClick  = {() => setsecondshow(!secondshow)}>  Cities We Deliver To   { secondshow ?  <MdKeyboardArrowUp />  : <RiArrowDownSLine /> }   </span>
                 { 
                    secondshow ?   <p> 
                    Beverages food near meBiryani food near meBurger food near meCafe
-                    food near meChinese food near meCoffee food near meDesserts 
+                    food near meChinese food near meCoffee food near meDesserts GIT 
                     food near meIce Cream food near meItalian food near meJuices 
                     food near meMithai food near meMughlai food near meNorth
                      Indian food near mePizza food near meSalad food near meSandwich

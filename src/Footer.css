@@ -1,0 +1,10 @@
+#footer-ul
+{
+     display:flex;
+     flex-direction: column;
+     height: 0px;
+}
+#footer-part-1
+{
+    display: flex;
+}
