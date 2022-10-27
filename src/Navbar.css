@@ -1,3 +1,5 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Amiri&display=swap');
 .navbar-bg
 {
 
@@ -9,7 +11,7 @@ height: 100%;
 ul > li 
 {
     list-style-type: none;
-    width: 56%;
+    width: 100%;
 
 }
 ul>li>a 
@@ -20,10 +22,11 @@ ul>li>a
 }
 .navbar-content
 {
-margin-left: 19%;
-margin-right: 19%;
-display: grid;
-grid-template-columns: 141px 1fr;
+margin-left: 9%;
+margin-right: 9%;
+display: flex;
+justify-content: space-evenly;
+padding-top: 3%;
 
 }
 .navbar-first > span
@@ -41,4 +44,5 @@ ul{
 {
     margin: 0px;
     padding: 0px;
+    width: 60%;
 }
