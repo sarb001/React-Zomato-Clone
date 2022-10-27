@@ -1,6 +1,7 @@
 import React from 'react'
 import './Navbar.css';
 import {FcSearch} from 'react-icons/fc';
+import Exploreoptions from './Exploreoptions';
 
  function Navbar() {
   return (
@@ -38,6 +39,8 @@ import {FcSearch} from 'react-icons/fc';
                  <div className="section-second">
                      <h2> Seodn   </h2>
                  </div>
+
+                 <Exploreoptions />
 
             </div>
   )
