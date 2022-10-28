@@ -4,6 +4,7 @@ import {FcSearch} from 'react-icons/fc';
 import Exploreoptions from './Exploreoptions';
 
 import Footer from './Footer';
+import CarouselCollection from './CarouselCollection';
 
  function Navbar() {
   return (
@@ -39,7 +40,7 @@ import Footer from './Footer';
                 </div>
 
                  <div className = "section-cover">
-  
+                    <CarouselCollection />
                  <Exploreoptions />
                  {/* <Footer /> */}
                  </div>

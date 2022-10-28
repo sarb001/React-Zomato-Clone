@@ -1,23 +1,39 @@
 import React from 'react'
 import './Carousel.css';
-
+import NextArrow from './NextArrow';
+import PrevArrow from './PrevArrow';
 import Slider from 'react-slick';
 
-var settings = {
+const  settings = {
 
     infinite: false,
-    speed: 500,
-    slidesToShow: 1,
-    slidesToScroll: 1
+    slidesToShow: 5,
+    slidesToScroll: 1,
+    prevArrow : <NextArrow />,
+    nextArrow : <PrevArrow />,
   };
 
 
- function Carousel() {
+ function Carousel({list}) {
   return (
-    <div> 
-       <Slider {...settings} >
-            
-        <Slider />
+    <div className = 'collection-wrapper'> 
+         <div className = "max-width">
+             <div className = "collection-subtitle-text">
+                  <span> Inspiration for your first order </span>
+             </div>
+         </div>
+
+         <Slider {...settings} >
+                {list.map((item) =>
+                (
+                    <div>
+                         <div className = "collection-cover">
+                             <img src = {item.image}  alt = "carosuel-image"  className='collection-image' />
+                             <span id = "title">   {item.title} </span>
+                         </div>
+                    </div>
+                ))}
+        </Slider > 
     </div>
   )
 }
