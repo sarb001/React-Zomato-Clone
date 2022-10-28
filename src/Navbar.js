@@ -2,13 +2,19 @@ import React from 'react'
 import './Navbar.css';
 import {FcSearch} from 'react-icons/fc';
 import Exploreoptions from './Exploreoptions';
-
+import { RestaurantCollection } from './RestaurantCollection';
 import Footer from './Footer';
 import CarouselCollection from './CarouselCollection';
 import Card from './Card';
 import MainRes from './MainRes';
+import { useState } from 'react';
 
- function Navbar() {
+const loop = RestaurantCollection;
+
+ function Navbar() 
+ {
+    const[search,setsearch] = useState("");    
+
   return (
             <div className ='container'>
                 <div className = 'navbar-bg'>
@@ -35,8 +41,14 @@ import MainRes from './MainRes';
                                 <div className="input-cover">
                                     <div className = "input-bar">
                                         <span id = "search-icon" >  <FcSearch />  </span>
-                                        <span> <input  type = "text" id = "input-main"  />    </span>
-                                        
+                                        <span> <input  type = "text" id = "input-main"  placeholder='Type here to Search' onChange={(e) => setsearch(e.target.value)} />    </span>
+                                          {/* {
+                                             loop.filter((val) =>
+                                             {
+                                                   if(val.info.name.toLowerCase(search).includes(search.toLowerCase()).map(movie => return <MainRes /> )) 
+                                                   
+                                             })
+                                          } */}
                                     </div>
                                 </div>
                 </div>
