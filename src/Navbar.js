@@ -40,12 +40,17 @@ import CarouselCollection from './CarouselCollection';
                 </div>
 
                  <div className = "section-cover">
-                    <CarouselCollection />
-                 <Exploreoptions />
-                 {/* <Footer /> */}
+                    <div className="carousel-cover" style = {{padding:'5% 0%'}}>
+                            <CarouselCollection />
+                    </div>
+                    
+                    <div className="explore-cover" style = {{padding:'5% 0%'}}>
+                            <Exploreoptions />
+                    </div>
+                 
                  </div>
-
-
+                 
+{/* <Footer /> */}
             </div>
   )
 }
