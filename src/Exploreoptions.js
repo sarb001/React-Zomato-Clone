@@ -6,18 +6,15 @@ import { MdKeyboardArrowUp} from 'react-icons/md';
 
  function Exploreoptions() 
  {
-
-     const [firstshow,setfirstshow] = useState(false); 
-     
+     const [firstshow,setfirstshow]   = useState(false); 
      const [secondshow,setsecondshow] = useState(false); 
-
 
   return (
     <div className = 'explore-options'>
-         <span>  Explore options near me  </span>
+         <span style = {{fontSize:'35px'}}>  Explore options near me  </span>
 
-         <div className = "first-accordian">
-                <span onClick  = {() => setfirstshow(!firstshow)}>  Popular cuisines  near me  { firstshow ?  <MdKeyboardArrowUp />  : <RiArrowDownSLine /> }   </span>
+         <div className = "first-accordian"  onClick  = {() => setfirstshow(!firstshow)}>
+                <span id = "click-accordian" >  Popular cuisines  near me  { firstshow ?  <MdKeyboardArrowUp />  : <RiArrowDownSLine /> }   </span>
                 { 
                    firstshow ?   <p> 
                    Beverages food near meBiryani food near meBurger food near meCafe
@@ -32,8 +29,8 @@ import { MdKeyboardArrowUp} from 'react-icons/md';
               
          </div>
     
-         <div className = "second-accordian">
-                <span onClick  = {() => setsecondshow(!secondshow)}>  Cities We Deliver To   { secondshow ?  <MdKeyboardArrowUp />  : <RiArrowDownSLine /> }   </span>
+         <div className = "second-accordian"  onClick  = {() => setsecondshow(!secondshow)}v>
+                <span id = "click-accordian" >  Cities We Deliver To   { secondshow ?  <MdKeyboardArrowUp />  : <RiArrowDownSLine /> }   </span>
                 { 
                    secondshow ?   <p> 
                    Beverages food near meBiryani food near meBurger food near meCafe
@@ -45,9 +42,7 @@ import { MdKeyboardArrowUp} from 'react-icons/md';
                    near meWraps food near me
                 </p> : null 
                 }
-              
          </div>        
-
     </div>
   )
 }

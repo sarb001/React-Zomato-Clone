@@ -38,12 +38,12 @@ import Footer from './Footer';
                                 </div>
                 </div>
 
-                 <div className="section-second">
-                     <h2> Seodn   </h2>
-                 </div>
-
+                 <div className = "section-cover">
+  
                  <Exploreoptions />
                  {/* <Footer /> */}
+                 </div>
+
 
             </div>
   )

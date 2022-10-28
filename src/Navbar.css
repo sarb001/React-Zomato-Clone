@@ -2,17 +2,15 @@
 @import url('https://fonts.googleapis.com/css2?family=Amiri&display=swap');
 .navbar-bg
 {
-
-background-image: url(/public/bg-img.avif);
-background-position: center;
-background-size: cover;
-height: 100%;
+    background-image: url(/public/bg-img.avif);
+    background-position: center;
+    background-size: cover;
+    height: 100%;
 }
 ul > li 
 {
     list-style-type: none;
     width: 100%;
-
 }
 ul>li>a 
 {
@@ -22,13 +20,12 @@ ul>li>a
 }
 .navbar-content
 {
-margin-left: 9%;
-margin-right: 9%;
-display: flex;
-justify-content: space-evenly;
-padding-top: 1%;
-height: 25vh;
-
+    margin-left: 9%;
+    margin-right: 9%;
+    display: flex;
+    justify-content: space-evenly;
+    padding-top: 1%;
+    height: 25vh;
 }
 .navbar-first > span
 {
@@ -92,4 +89,32 @@ ul{
     display: flex;
     flex-direction: column;
     text-align: center;
+}
+.section-cover
+{
+    margin-left: 15%;
+    margin-right: 15%;
+    padding-top: 10%;
+}
+.first-accordian 
+{
+    width: 90%;
+    background-color: white;
+    padding: 1% 1%;
+    border-radius: 12px;
+    border: 1px solid black;
+    margin: 1% 0%;
+}
+.second-accordian
+{
+    width: 90%;
+    background-color: white;
+    padding: 1% 1%;
+    border-radius: 12px;
+    border: 1px solid black;
+}
+#click-accordian
+{
+    font-size: 20px;
+    font-weight: 500;
 }
