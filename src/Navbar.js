@@ -5,6 +5,7 @@ import Exploreoptions from './Exploreoptions';
 
 import Footer from './Footer';
 import CarouselCollection from './CarouselCollection';
+import Card from './Card';
 
  function Navbar() {
   return (
@@ -44,6 +45,10 @@ import CarouselCollection from './CarouselCollection';
                             <CarouselCollection />
                     </div>
                     
+                    <div className="card-cover" style = {{padding:'5% 0%'}}>
+                            <Card />
+                    </div>
+
                     <div className="explore-cover" style = {{padding:'5% 0%'}}>
                             <Exploreoptions />
                     </div>
