@@ -1,13 +1,36 @@
 .container-wrapper
 {
     background-color:whitesmoke;
-    width:35%;
+    width:30%;
     border-radius:'5%';
     cursor: pointer;
+    margin: 2% 1%;
 }
 .container-wrapper:hover
 {
-    box-shadow:  2px 3px 3px 3px wheat;
+    box-shadow:  1px 2px 3px 4px rgb(137, 134, 128);
     border: 1px solid black;
     border-radius: 6%;
+}
+.image-container
+{
+  position: relative;
+}
+.image-id
+{
+  width:100%;
+  border-radius:5%; 
+  height:40vh;
+}
+.text-aboveimg
+{
+   position: absolute;
+   top:80%;
+   left:2%;
+   background-color: brown;
+}
+.text-partition
+{
+    display: flex;
+    justify-content: space-around;
 }

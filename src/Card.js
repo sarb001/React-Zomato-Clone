@@ -1,27 +1,32 @@
 import React from 'react'
 import './Cards.css';
 
- function Card() {
+ function Card({itemain}) 
+ {
   return (
-    <div className='container-wrapper' >
+    <div className='container-wrapper'>
          <div className="image-container" style = {{padding:'2%'}}>  
-          <img src = "/pasta.-2 .png"  alt = "Chicken" style = {{width:'100%',borderRadius:'5%',height:'40vh'}}/>
-              <div className="pr-extra-off"> Pro extra 20% OFF  </div>
-              <div className="off-upto"> 50% OFF up to 100 </div>
-               <span> 12 min </span>
+          <img  className  = "image-id" src = {itemain?.info?.image?.url}  alt = "Chicken"   />
+            <div className = "text-aboveimg" >
+                    <div className = "pr-extra-off" style = {{fontWeight:'500',fontSize:'19px',color:'white'}}> 
+                     { itemain?.bulkOffers[0].text }
+                    </div>
+            </div>
          </div>
-            <div className="card-text" style = {{paddingLeft:'5%',paddingRight:'5%',borderBottom:'3px solid black'}}> 
-                <div className="card-text-1" style = {{display:'flex',justifyContent:'space-between'}} >
-                    <span> Pritam Dhaba  </span>
-                    <span>3.6</span>
+
+        <div className = "card-text" style = {{paddingLeft:'5%',paddingRight:'5%',borderBottom:'3px solid black'}}> 
+                <div className ="card-text-1" style = {{display:'flex',justifyContent:'space-between'}} >
+                    <span style = {{fontSize:'24px',fontWeight:'500'}}> {itemain?.info?.name} </span>
+                    <span style= {{fontWeight:'600'}}> {itemain?.info?.rating?.rating_text} </span>
                 </div>
                 <div className="card-text-2" style = {{display:'flex',justifyContent:'space-between'}}>
-                   <span> North Indian , Chinese ,Pizza  </span>
-                    <span> Rs. 100 for one  </span>
+                   <span style= {{fontWeight:'600'}}>   {itemain?.info?.cuisine?.map((item) => item.name).slice(0,3)}  </span>
+                    <span style= {{fontWeight:'600'}}>{itemain?.info?.cfo?.text}  </span>
                 </div>
           </div>
+
          <div className="card-bottom-ad" style= {{padding:'2%'}}>
-            <span> 3150+ orders placed from here recently  </span>    
+            <span> {itemain?.bottomContainers[0]?.text} </span>    
          </div>
     </div>
   )
