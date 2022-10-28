@@ -15,7 +15,7 @@ import CarouselCollection from './CarouselCollection';
                                     <span> Get the App  </span>
                             </div>
                             <div className = "navbar-second">
-                                    <ul>
+                                    <ul id = "ul-data">
                                         <li> <a  href = "#"> Investor Relations </a> </li>
                                         <li> <a  href = "#"> Add restaurant </a> </li>
                                         <li> <a  href = "#"> Log in  </a> </li>
@@ -47,10 +47,14 @@ import CarouselCollection from './CarouselCollection';
                     <div className="explore-cover" style = {{padding:'5% 0%'}}>
                             <Exploreoptions />
                     </div>
-                 
                  </div>
-                 
-{/* <Footer /> */}
+
+                     <div className="footer-cover" >
+                            <Footer />
+                            
+                     </div>
+
+               
             </div>
   )
 }

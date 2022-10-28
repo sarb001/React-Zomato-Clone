@@ -7,12 +7,12 @@
     background-size: cover;
     height: 100%;
 }
-ul > li 
+#ul-data > li 
 {
     list-style-type: none;
     width: 100%;
 }
-ul>li>a 
+#ul-data>li>a 
 {
     text-decoration: none;
     color:rgb(255, 254, 254);
@@ -31,7 +31,7 @@ ul>li>a
 {
     color: white;
 }
-ul{
+#ul-data{
     height: 60vh;
     display: flex;
     flex-direction: row;
@@ -103,7 +103,7 @@ ul{
     padding: 1% 1%;
     border-radius: 12px;
     border: 1px solid black;
-    margin: 1% 0%;
+    margin: 2% 0%;
 }
 .second-accordian
 {
@@ -112,6 +112,7 @@ ul{
     padding: 1% 1%;
     border-radius: 12px;
     border: 1px solid black;
+    margin: 4% 0%;
 }
 #click-accordian
 {
