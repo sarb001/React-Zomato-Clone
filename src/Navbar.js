@@ -13,7 +13,6 @@ const loop = RestaurantCollection;
 
  function Navbar() 
  {
-    const[search,setsearch] = useState("");    
 
   return (
             <div className ='container'>
@@ -42,13 +41,7 @@ const loop = RestaurantCollection;
                                     <div className = "input-bar">
                                         <span id = "search-icon" >  <FcSearch />  </span>
                                         <span> <input  type = "text" id = "input-main"  placeholder='Type here to Search' onChange={(e) => setsearch(e.target.value)} />    </span>
-                                          {/* {
-                                             loop.filter((val) =>
-                                             {
-                                                   if(val.info.name.toLowerCase(search).includes(search.toLowerCase()).map(movie => return <MainRes /> )) 
-                                                   
-                                             })
-                                          } */}
+                                          
                                     </div>
                                 </div>
                 </div>
